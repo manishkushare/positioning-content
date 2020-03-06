@@ -58,9 +58,11 @@ table {
 
 body    {
     line-height: 2;
+    font-family: 'Poppins', sans-serif;
+
 }
 .container  {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 *{
@@ -93,6 +95,7 @@ body    {
 .fixed  {
     position: fixed;
     width: 100%;
+    background-color: #5385C1;
 }
 .logo a {
     font-weight: bolder;
@@ -101,9 +104,11 @@ body    {
     position: fixed;
 }
 .nav    {
-    padding: 50px 0;
+    padding: 20px 0;
 }
-
+.menu a {
+    margin-left: 10px ;
+}
 /*================MAIN=================*/
 
         /*--------HERO-----*/
@@ -157,24 +162,32 @@ body    {
 }
 
         /* ---------------SECTION2------------------ */
-
+/* section 2 columns */
 .col2   {
     width: 20%;
     float: left;
     margin: 0 20px;
     border: 1px solid white;
 }
+/* section 2 images */
 .image  {
     width: 100%;
     border-radius: 50%;
     padding: 20px 20px;
 }
+/* section 2 body */
 .section2-background    {
     background-color: #5385C1;
 }
+.sec2-article2  {
+    padding: 0 0 100px 0;
+}
+
 .section2-head  {
     padding: 100px 0 50px 0;
 }
+
+/* section 2 text */
 .section2-head  h2  {
     color: white;
     font-size: 30px;
@@ -198,22 +211,23 @@ body    {
 .col2 p     {
     text-align: center;
 }
-.sec2-article2  {
-    padding: 0 0 100px 0;
-}
+
 
         /* -------------section 3-------------- */
-
+/* row3 columns */
 .row3-col   {
     float: left;
     width: 50%;
     padding: 0 20px;
+
+    /* image */
 }
 .image1 {
     width: 100%;
 }
+/* section 3 text */
 .section3-head  h2  {
-    color: #5385C1;
+    color: #6290C7;
     font-size: 40px;
     
 }
@@ -226,17 +240,19 @@ body    {
 .section3-head  h2  {
     text-align: center;
 }
-.section3-head  {
-    padding: 100px 0 50px 0;
-}
 .row3-col h2    {
-    color: #5385C1;
+    color: #6290C7;
     margin: 20px 0;
     font-size: 20px;
 }
 .row3-col  p {
     color: #A2A2A2;
     margin: 20px 0;
+}
+
+/* section 3 body */
+.section3-head  {
+    padding: 100px 0 50px 0;
 }
 .section3   {
     padding-bottom: 100px;
@@ -245,7 +261,7 @@ body    {
 
 
     /* -----------------Footer------------------ */
-
+/* copyright */
 .copy   {
     font-size: 15px;
     color: #A2A2A2;
@@ -254,13 +270,15 @@ body    {
 .footer {
     padding: 25px 0;
 }
+/* footer social media style */
 .float-menu {
     float: right;
     margin-top: -30px;
-    
+
+/* float anchor tags */
 }
 .float-menu a   {
-    color: #A2A2A2;
+    color: #6491C8;
     margin-left: 10px;
     
 }
