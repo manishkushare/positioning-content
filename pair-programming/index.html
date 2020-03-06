@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair-Programming</title>
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class="head">
+                <h1>Side-By-Side Positioning Demo</h1>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="row1">
+            <article class="container">
+                <div class="row-back row1-col1">
+                    <p>These are two divs are positioned next to one another using <span>display:inline-block</span></p>
+                </div>
+                <div class="row-back row1-col2">
+                    <p>Notice the space between them. It occursbecause of my carriage return in the HTML which I've used to keep the code organized.I've used a reset to insure no elements should have any default margin or padding. (I did add a bottom margin to make it easier to read.) This page is actually a space character renderedjust asit would be between two inline elements.</p>
+                </div>
+            </article>
+        </section>
+        <section class="row2">
+            <article class="container clearfix">
+                <div class="row2-col1">
+                    <p>These two are positioned using <span>float:left</span></p>
+                </div>
+                <div class="row2-col2">
+                    <p>You can see that,even though the elements are spaced in the code, the space is not actually  rendered on the page. this may not be huge deal in the firstexampless,but....</p>
+                </div>
+            </article>
+        </section>
+        <section class="row3">
+            <article class="container">
+                <div class="row-back row3-col1">
+                    <p>What if I want my side-by-side elements to take up the full width of the parent element? I can set the width of each to 50%, right?</p>
+                </div>
+                <div class="row-back row3-col2">
+                    <p>Wrong!Because,together, the two inline block elements will add up to 100% of the avialable width, but that doesn't account for the space between.</p>
+                </div>
+            </article>
+        </section>
+        <section class="row4">
+            <article class="container clearfix">
+                <div class="row2-col1" id="row4-col1">
+                    <p>If I do same thing with floated elements....</p>
+                </div>
+                <div class="row2-col2" id="row4-col1">
+                    <p>The two elements are side-by-sidejust as I intended and fill the entire width of the parent(which, in this case, is the same as the width of a vievport.)</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

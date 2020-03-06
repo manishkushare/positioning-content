@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+============================================
+            general
+=============================================
+*/
+
+.container  {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+}
+.row-back   {
+    vertical-align: top;
+    border: 1px solid red;
+    border-radius: 5%;
+    padding: 30px;
+    background-color:#F47368;
+    font-size: 20px;
+    word-spacing: 10px;
+    line-height: 2;
+}
+
+.head   {
+    font-size: 40px;
+    margin: 20px 0;
+    font-weight: 500px;
+}
+.row1-col1,
+.row1-col2  {
+    display: inline-block;
+    width: 45%;
+}
+.row1-col1,
+.row1-col2  {
+    vertical-align: top;
+    border: 1px solid red;
+    border-radius: 5%;
+    padding: 30px;
+    background-color:#F47368;
+    font-size: 20px;
+    word-spacing: 10px;
+    line-height: 2;
+}
+.row1-col1 span   {
+    border: 1px solid #FBD6D2;
+    background-color: #FBD6D2;
+}
+.row2-col1,
+.row2-col2  {
+    width: 45%;
+    border: 1px solid black;
+    background-color: #6DED92;
+    border-radius: 5%;
+}
+.row2-col1,
+.row2-col2 {
+    float: left;
+    padding: 40px;
+    
+}
+
+.row2   {
+    margin: 100px 0;
+}
+.clearfix::after,
+.clearfix::before   {
+    content: "";
+    display: table;
+}
+.clearfix::after    {
+    clear: both;
+}
+.row2-col1 span {
+    border: 1px solid #CEF8E0;
+    background-color: #CEF8E0;
+}
+.row3-col1,
+.row3-col2  {
+    display: inline-block;
+    width: 50%;
+
+}
+.row3-col2{
+    margin: 25px 0;
+}
+#row4-col1,
+#row4-col2  {
+    width: 50%;
+    margin: 25px 0;
+}
